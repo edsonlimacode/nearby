@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.edsonlima.nearby.data.model.Market
+import com.edsonlima.nearby.data.model.mocks.marketList
 import com.edsonlima.nearby.ui.theme.Typography
 
 @Composable
@@ -40,33 +41,7 @@ fun MarketCardList(
 @Composable
 private fun MarketCardListPreview() {
     MarketCardList(
-        markets = listOf(
-            Market(
-                id = "1",
-                categoryId = "1",
-                name = "Mercado",
-                description = "Mercado de alimentos, bebidas e demais produtos",
-                coupons = 10,
-                rules = emptyList(),
-                latitude = 23.557784,
-                longitude = -46.65565,
-                address = "Vila União",
-                phone = "88993022323",
-                cover = ""
-            ), Market(
-                id = "2",
-                categoryId = "2",
-                name = "Caféteria",
-                description = "Café da manhã e demais produtos",
-                coupons = 10,
-                rules = emptyList(),
-                latitude = 23.557784,
-                longitude = -46.65565,
-                address = "Vila União",
-                phone = "88993022323",
-                cover = ""
-            )
-        ),
+        markets = marketList,
         onClick = {}
     )
 }
