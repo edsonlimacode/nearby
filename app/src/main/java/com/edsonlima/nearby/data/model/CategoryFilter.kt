@@ -3,7 +3,7 @@ package com.edsonlima.nearby.data.model
 import androidx.annotation.DrawableRes
 import com.edsonlima.nearby.R
 
-enum class NearbyCategoryFilterChipView(
+enum class CategoryFilter(
     val description: String,
     @DrawableRes val icon: Int
 ) {
@@ -18,7 +18,7 @@ enum class NearbyCategoryFilterChipView(
 
     companion object {
 
-        fun fromDescription(description: String): NearbyCategoryFilterChipView? {
+        fun fromDescription(description: String): CategoryFilter? {
             return entries.find { it.description == description }
         }
 
