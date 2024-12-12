@@ -9,10 +9,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import com.edsonlima.nearby.data.model.Market
-import com.edsonlima.nearby.ui.screen.HomeScreen
-import com.edsonlima.nearby.ui.screen.MarketDetailScreen
-import com.edsonlima.nearby.ui.screen.SplashScreen
-import com.edsonlima.nearby.ui.screen.WelcomeScreen
+import com.edsonlima.nearby.ui.screen.home.HomeScreen
+import com.edsonlima.nearby.ui.screen.marketDetails.MarketDetailScreen
+import com.edsonlima.nearby.ui.screen.splash.SplashScreen
+import com.edsonlima.nearby.ui.screen.welcome.WelcomeScreen
 import com.edsonlima.nearby.ui.screen.route.Home
 import com.edsonlima.nearby.ui.screen.route.Splash
 import com.edsonlima.nearby.ui.screen.route.Welcome
