@@ -1,4 +1,4 @@
-package com.edsonlima.nearby.ui.screen
+package com.edsonlima.nearby.ui.components.welcome
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -7,7 +7,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.edsonlima.nearby.R
-import com.edsonlima.nearby.ui.components.welcome.WelcomeItWorks
 import com.edsonlima.nearby.ui.theme.Typography
 
 

@@ -32,12 +32,13 @@ fun MarketDetailsCupons(
 ) {
 
     Column(
-        modifier = modifier,
+        modifier = Modifier.padding(bottom = 25.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         Text(text = "Ultilize estes cupons", style = Typography.headlineSmall, color = Gray400)
 
         coupons.forEach { cupon ->
+
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -48,14 +49,12 @@ fun MarketDetailsCupons(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-
                 Icon(
-                    modifier = modifier.size(24.dp),
                     tint = GreenBase,
                     painter = painterResource(id = R.drawable.ic_ticket),
                     contentDescription = "Cupons"
                 )
-                 Text(text = cupon, style = Typography.headlineSmall)
+                Text(text = cupon, style = Typography.headlineSmall)
             }
         }
     }
@@ -66,6 +65,6 @@ fun MarketDetailsCupons(
 private fun MarketDetailsCuponsPrev() {
     MarketDetailsCupons(
         modifier = Modifier.fillMaxWidth(),
-        coupons = listOf("BER123SW", "BER123SW1", "BER123SW2")
+        coupons = listOf("ABC123SW", "DEF123SW", "EFG123SW")
     )
 }

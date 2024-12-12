@@ -52,7 +52,7 @@ fun MarketCard(
         Row(
             modifier
                 .fillMaxWidth()
-                .background(Gray200)
+                .background(Gray100)
                 .padding(8.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(16.dp)
@@ -112,7 +112,7 @@ private fun MarketCardPreview() {
             name = "Mercado",
             description = "Mercado de alimentos, bebidas e demais produtos",
             coupons = 10,
-            rules = emptyList(),
+            //rules = emptyList(),
             latitude = 23.557784,
             longitude = -46.65565,
             address = "Vila União",
