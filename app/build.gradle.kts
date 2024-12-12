@@ -46,6 +46,8 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.navigation.componse)
     implementation(libs.kotlin.serialization)
+    implementation(platform(libs.ktor.bom))
+    implementation(libs.bundles.ktor)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
