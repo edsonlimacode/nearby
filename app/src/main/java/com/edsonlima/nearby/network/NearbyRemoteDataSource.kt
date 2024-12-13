@@ -1,5 +1,6 @@
 package com.edsonlima.nearby.network
 
+import android.util.Log
 import com.edsonlima.nearby.data.model.Category
 import com.edsonlima.nearby.data.model.Coupon
 import com.edsonlima.nearby.data.model.Market
@@ -13,8 +14,9 @@ object NearbyRemoteDataSource {
 
     //para acessar a api, e preciso passar o ip do emulador
     private const val LOCAL_HOST_EMULATOR_BASE_URL = "http://10.0.2.2:3333"
+    private const val FISICAL_HOST_EMULATOR_BASE_URL = "http://192.168.1.7:3333"
 
-    private const val BASE_URL = LOCAL_HOST_EMULATOR_BASE_URL
+    private const val BASE_URL = FISICAL_HOST_EMULATOR_BASE_URL
 
 
     suspend fun getCategories(): Result<List<Category>> {
